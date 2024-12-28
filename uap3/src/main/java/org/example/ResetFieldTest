@@ -1,0 +1,33 @@
+package org.example;
+
+import org.junit.Test;
+
+import java.awt.*;
+
+import static org.junit.Assert.assertEquals;
+
+public  class ResetFieldTest {
+
+        @Test
+        public void hitungNilai() {
+            // Input values
+
+                double tugas = 90;
+                double quiz = 80;
+                double uts = 85;
+                double uas = 75;
+
+                // Calculate expected average
+                double expectedAverage = 82.0; // Sesuai rumus yang digunakan
+
+                // Calculate actual average
+                double actualAverage = (tugas * 0.2) + (quiz * 0.2) + (uts * 0.3) + (uas * 0.3);
+
+                // Assert that the calculated average is correct
+                assertEquals(expectedAverage, actualAverage, 0.01); // Toleransi 0.01 untuk nilai desimal
+
+
+        }
+
+
+}
